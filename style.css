@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color: #fff;
+}
+header .container{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000;
+}
+header .container img{
+    width: 80px;
+}
+nav{
+    padding: 5px;
+}
+header .container nav a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+    padding: 5px;
+}
+header .container nav a:hover{
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+section{
+    width: 100%;
+}
+
+.banner{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./img/exterior-barbershop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+@media (max-width: 600px){
+    .banner{
+        height: 50vh;
+        background-position: top right;
+    }
+}
+
+.secao-banner{
+    background-color: #071f2a;
+    color: #000000;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.secao-banner .container div{
+    max-width: 500px;
+    padding: 10px; 
+    flex: 1 1 500px;
+}
+.secao-banner .container div h1{
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.secao-banner .container div h1 span{
+    color: rgb(251 191 36);
+}
+.secao-banner .container div p{
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+}
+.container img{
+    max-width: 600px;
+    width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+}
+.servicos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.servicos .texto{
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 40px 10px;
+    text-align: center;
+}
+.servicos .texto h2{
+    font-size: 32px;
+}
+.servicos .texto p{
+    font-size: 18px;
+    color: #000000;
+}
+.servicos .container-cards{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 40px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.servicos .container-cards .cards{
+    max-width: 450px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1 450px;
+    background-color: #e5e7eb;
+    border-radius: 10px;
+}
+.cards:hover{
+    box-shadow: 0 0 20px  #000;
+    transition: 0.3s;
+}
+.cards img{
+    width: 400px;
+    height: 300px;
+    border-radius: 10px; 
+    margin-bottom: 20px;  
+}
+.cards h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.cards p{
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 15px;
+
+}
+.cards span{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(217 119 6);
+}
+.precos{
+    width: 100%;
+    background-color: #fff;
+}
+table{
+    max-width: 1024px;
+    background-color: #e5e7eb;
+    padding: 15px;
+    border-radius: 10px;
+}
+th{
+    text-align: center;
+    color: #000;
+    font-size: 32px;
+    padding: 10px;
+}
+tbody td{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+table td .span{
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+tbody td span{
+    font-size: 24px;
+    color: rgb(217, 119, 6);
+    font-weight: bold;
+}
+tfoot td p{
+    background-color: rgb(217, 119, 6, 0.1);
+    color: rgb(217, 119, 6);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.secao-sobre .container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.sobre-a-barbearia{
+    max-width: 700px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: #fff;
+}
+.sobre-a-barbearia .texto{
+    width: 100%;
+}
+.sobre-a-barbearia .texto h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+.sobre-a-barbearia .texto p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgb(71 85 105);
+}
+.sobre-a-barbearia .clientes-anos{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.clientes-anos .cards2 h3{
+    font-size: 28px;
+    text-align: center;
+    color: rgb(217, 119, 6);
+}
+.clientes-anos .cards2 p{
+    font-size: 18px;
+    color: rgb(71 85 105);
+}
+.secao-contato{
+    background-color: #78350f;
+    width: 100%;
+}
+.secao-contato .container{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 15px;
+}
+.secao-contato .container iframe{
+    width: 100%;
+    max-width: 1024px;
+    height: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+}
+.destaque{
+    max-width: 800px;
+    text-align: center;
+}
+.secao-contato .destaque h3{
+    font-size: 42px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.secao-contato .destaque h3 span{
+    color: rgb(251 191 36);
+}
+.secao-contato .destaque p{
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.contatos{
+    max-width: 500px;
+    width: 90%;
+    background-color: rgb(255 255 255 / 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+.contatos h3{
+    color: #e5e7eb;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.contatos p{
+    color: #e5e7eb;
+    font-size: 16px;
+}
+.contatos span{
+    font-weight: bold;
+    font-size: 18px;
+}
+.contatos a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #e5e7eb;
+}
+.contatos a:hover{
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.4;
+}
+footer{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #78350f;
+    border-top: 1px solid #e5e7eb1a;
+}
+footer p{
+    color: #e5e7eb;
+    font-size: 16px;
+}
+footer a{
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: bold;
+}
