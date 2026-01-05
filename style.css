@@ -14,13 +14,26 @@ header .container{
     padding: 10px;
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
+    flex: 0 1 auto;
     justify-content: space-between;
     border-bottom: 1px solid #000000;
 }
 header .container img{
     width: 80px;
-}
+} 
+                      /*Inicio da media query para smartphones: topo do site*/
+@media (max-width: 480px){
+    header .container img{
+        width: 60px;
+    }
+    header .container nav a{
+        font-size: 14px;
+    }
+}                       /*fim da media query para smartphones: topo do site*/
+
 nav{
+    margin-left: 5px;
     padding: 5px;
 }
 header .container nav a{
@@ -132,6 +145,15 @@ section{
     flex: 1 1 450px;
     background-color: #e5e7eb;
     border-radius: 10px;
+}
+@media (max-width: 480px) {
+    .servicos .container-cards .cards{
+        max-width: 350px;
+    }
+    .cards img{
+        width: 300px;
+        height: 250px;
+    }
 }
 .cards:hover{
     box-shadow: 0 0 20px  #000;
